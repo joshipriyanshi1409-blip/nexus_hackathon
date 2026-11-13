@@ -1,12 +1,11 @@
+@'
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
-  ],
   "functions": {
-    "api/index.py": {
+    "backend/app/main.py": {
       "maxDuration": 60,
       "includeFiles": "frontend/**"
     }
   }
 }
+'@ | Set-Content -Encoding ASCII vercel.json
