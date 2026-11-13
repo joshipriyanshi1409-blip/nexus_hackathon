@@ -1,4 +1,1 @@
-@'
-[tool.vercel]
-entrypoint = "backend.app.main:app"
-'@ | Set-Content -Encoding ASCII pyproject.toml
+
